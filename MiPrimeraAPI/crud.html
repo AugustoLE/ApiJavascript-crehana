@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/crehana.png">
+  <link rel="stylesheet" href="../MiPrimeraAPI/css/style.css">
+  <title>CRUD API REST FETCH</title>
+</head>
+
+<body>
+  <div class="cuadro">
+  <h1>CRUD API REST FETCH</h1>
+  <section class="crud">
+    <article>
+      <h2 class="crud-title">Agregar Personaje de dragon-ball</h2>
+      <form class="crud-form">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <br>
+        <input type="text" name="poder" placeholder="Kai" required>
+        <br>
+        <input class="enviar" type="submit" value="Enviar">
+        <input type="hidden" name="id">
+      </form>
+    </article>
+    <article>
+      <h2>Ver Personajes dragon-ball</h2>
+      <table class="crud-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Poder (Kai)</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </article>
+  </section>
+  <template id="crud-template">
+    <tr>
+      <td class="name"></td>
+      <td class="power"></td>
+      <td>
+        <button class="edit">Editar</button>
+        <button class="delete">Eliminar</button>
+      </td>
+    </tr>
+  </template>
+</div>
+
+<script src="../MiPrimeraAPI/js/obtenerDatos.js"></script>
+
+</body>
+</html>
